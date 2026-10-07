@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='65%' font-size='50' font-weight='bold' font-family='sans-serif' fill='%2338bdf8' text-anchor='middle'>D</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padam | MERN Stack Developer</title>
+  <meta name="description"
+    content="Padam is a MERN Stack Developer building modern, responsive and scalable web applications using React, Node.js, Express.js and MongoDB." />
+  <meta name="keywords"
+    content="Padam, MERN Stack Developer, React Developer, Full Stack Developer, Node.js, Express, MongoDB, Portfolio" />
+  <meta name="author" content="Padam" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Padam | MERN Stack Developer" />
+  <meta property="og:description"
+    content="Padam is a MERN Stack Developer building modern, responsive and scalable web applications using React, Node.js, Express.js and MongoDB." />
+  <meta property="og:site_name" content="Padam.dev" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Padam | MERN Stack Developer" />
+  <meta name="twitter:description"
+    content="Padam is a MERN Stack Developer building modern, responsive and scalable web applications using React, Node.js, Express.js and MongoDB." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function () {
+      try {
+        const savedTheme = localStorage.getItem('Padam_portfolio_theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body
+  class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white transition-colors duration-300 min-h-screen">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
